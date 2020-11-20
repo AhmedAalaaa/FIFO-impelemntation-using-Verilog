@@ -73,18 +73,18 @@ module FIFO_tb;
         WR_EN   = 1'h1;
         RD_EN   = 1'h1;      
     #10 
-        WR_EN   = 0;
+        WR_EN   = 1'h0;
         RD_EN   = 1'h0; 
     #10
         RD_EN   = 1'h1;
     #10
         RD_EN   = 1'h1;
     #50
-        RD_EN   = 0;
-        WR_EN   = 1;
+        RD_EN   = 1'h0;
+        WR_EN   = 1'h1;
         f_in    = 8'hff;   
     #20
-        RD_EN   = 1;
-        WR_EN   = 0;
+        RD_EN   = 1'h1;
+        WR_EN   = 1'h0;
     end
 endmodule
