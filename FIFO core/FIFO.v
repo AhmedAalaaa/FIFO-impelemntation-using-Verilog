@@ -80,8 +80,8 @@ module FIFO #
             else if(WR_EN == 0 && RD_EN == 1) begin
                 f_COUNTER <= f_COUNTER - 1;
                 if(f_COUNTER <= 0) begin
-                    f_empty_flag <= 1;
-                    f_COUNTER <= 0;
+                    f_empty_flag    <= 1;
+                    f_COUNTER       <= 0;
                 end
             end 
             
